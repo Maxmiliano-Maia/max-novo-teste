@@ -1,23 +1,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml" 
 xmlns:h="http://java.sun.com/jsf/html"
 xmlns:f="http://java.sun.com/jsf/core">
-	<h:head>
-		<title>SITURB</title>
-	</h:head>
+    <h:head>
+        <title>Cobrador</title>
+    </h:head>
 
-	<h:body>
-		<h1>SITURB - Sistema de Transportes Urbanos</h1>
-		<hr/>
-			<h2>Operações:</h2>
-			<h:form>
-				<h:commandLink action="#{cadastrarEmpresaMBean.entrarCadastro}" value="Cadastrar Empresa"/> <br/>
-				<h:commandLink action="#{cadastrarCobradorMBean.entrarCadastro}" value="Cadastrar Cobrador"/>  <br/>
-				<h:commandLink action="#{cadastrarMotoristaMBean.entrarCadastro}" value="Cadastrar Motorista"/> <br/>
-				<h:commandLink action="#{cadastrarLinhaMBean.entrarCadastro}" value="Cadastrar Linha"/> <br/>
-				<h:commandLink action="#{cadastrarOnibusMBean.entrarCadastro}" value="Cadastrar/listar Ônibus"/> <br/>
-			
-			
-			</h:form>
-		<hr/>
-</h:body>
+    <h:body>
+        <h:messages/>
+        <h1>Novo cobrador</h1>
+       
+        <h:form>
+       
+            <fieldset>
+            <h:commandButton value="Listar" action="#{cadastrarCobradorMBean.listar}" immediate="true"/>
+          <h:commandButton value="Excluir" action="#{cadastrarCobradorMBean.TelaExcluir}" immediate="true"/>
+                <p> Nome: <h:inputText value="#{cadastrarCobradorMBean.cobrador.nome}" size="50" required="true" requiredMessage="Nome: Campo obrigatório." /> </p>
+                <p> CPF: <h:inputText value="#{cadastrarCobradorMBean.cobrador.cpf}" size="20" required="true" requiredMessage="CPF: Campo obrigatório." /> </p>
+                <p> Matrícula: <h:inputText value="#{cadastrarCobradorMBean.cobrador.matricula}" size="20" required="true" requiredMessage="Matrícula: Campo obrigatório." /> </p>
+                <p> Endereço: <h:inputTextarea value="#{cadastrarCobradorMBean.cobrador.endereco}" size="50" required="true" requiredMessage="Endereço: Campo obrigatório." /> </p>
+                <p> <h:commandButton value="Cadastrar" action="#{cadastrarCobradorMBean.cadastrar}" />
+                
+                    <h:commandButton value="Voltar" action="#{cadastrarCobradorMBean.voltar}" 
+                immediate="true"/> </p>
+            </fieldset>
+        </h:form>
+    </h:body>
 </html>
