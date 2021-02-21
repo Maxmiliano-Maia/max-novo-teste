@@ -3,7 +3,9 @@ xmlns:h="http://java.sun.com/jsf/html"
 xmlns:f="http://java.sun.com/jsf/core">
 	<h:head>
 		<title>o que estou aprendendo em programação</title>
-	<h:outputStylesheet name="css/style.css"/>
+	<h:outputStylesheet library ="default" name="css/style.css"/>
+	<!-- [localPrefix/][libraryName/][libraryVersion/][resourceName[/resourceVersion] -->
+	<!-- \d+(_\d+)*1_0,1_1,1_2,1_2_1 -->
 	</h:head>
 
 	<h:body>
@@ -11,7 +13,7 @@ xmlns:f="http://java.sun.com/jsf/core">
 		<h2><b>Paragrafo com h2 e negrito</b></h2>  
 		<h:outputText value="Aprendendo text out"/><br/>
 		<h:inputText style="color:green; margin:10px;" value="Hello Teste"/> <br/>
-		<h:graphicImage name="images/fotoperfil.jpg"/> <br/>
+		<h:graphicImage library="default" name="images/fotoperfil.jpg"/> <br/>
 		<h:commandButton value="Clique alerta!!!" onclick="alert('Teste de Alerta');"/>
 		<hr/>
 			<h2>Opções:</h2>
