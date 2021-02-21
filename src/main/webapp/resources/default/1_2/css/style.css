@@ -32,7 +32,8 @@
 
 
 
-body { 
+body {
+	letter-spacing: 1px;
 	font: 75% georgia, sans-serif;
 	line-height: 1.88889;
 	color: #555753; 
