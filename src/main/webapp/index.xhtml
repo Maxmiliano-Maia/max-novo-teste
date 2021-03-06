@@ -2,9 +2,19 @@
 xmlns:h="http://java.sun.com/jsf/html"
 xmlns:f="http://java.sun.com/jsf/core">
 	<h:head>
-	
-
-		<title>o que estou aprendendo em programação</title>
+			<title>o que estou aprendendo em programação</title>
+			<meta charset="utf-8"/>
+			<style>
+			#dv1{
+				width: 100px;
+				height: 100px;
+				border: 1px solid #000;
+				background-color: #f00;
+				position: absolute;
+				left: 0px;
+				top: 400px;
+				}						
+			</style>
 	<h:outputStylesheet library ="default" name="css/style.css"/>
 	<!-- [localPrefix/][libraryName/][libraryVersion/][resourceName[/resourceVersion] -->
 	<!-- \d+(_\d+)*1_0,1_1,1_2,1_2_1 -->
@@ -12,11 +22,21 @@ xmlns:f="http://java.sun.com/jsf/core">
 	</h:head>
 
 	<h:body>
+	<div id="dv1" > <br/><br/></div>
+	
+	<div class="image">
+	<img class="frame" src ="resources/default/1_2/images/1.jpg" alt=""/>
+	</div>
+	
+	<h:graphicImage library="default" name="images/2.jpg" width="300" height="20%"/>
+	
 	<p onClick="alert('totalmente demais')"> Click para mostrar javascript</p>
+	
+	
 	
 		<h1>O Que Estou Aprendendo Em Programação</h1>
 		 
-		<h:graphicImage library="default" name="images/fotoperfil.jpg" width="300" height="20%"/> <br/><br/>
+		
 		
 		
 <h2><b> Quem Sou Eu ?  Qual é Objetivo do Desenvolvimento Desse Site ? </b></h2><hr/> <br/>
