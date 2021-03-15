@@ -7,22 +7,22 @@ var interval = setInterval(function(){
 
 frame++;
 
-	document.querySelector(".frame").src = "resources/default/1_2/images/"+frame+".jpg";
+	document.querySelector(".frame").src = "resources/default/1_2/images/"+frame+".png";
 		
-	if(frame==3){
+	if(frame==6){
 		
-		frame -= 3 ;		
+		frame -= 6 ;		
 	};
 		
 			
-		},500);
- 
+		},100);
 
 
 document.addEventListener("keydown",function(event){
 var obj=document.getElementById("dv3");
 var tecla=event.keyCode;
 //37=Esquerda - 38=cima - 39=direita - 40=baixo
+
 
 if (tecla==37){
 	px-=10;
@@ -39,3 +39,34 @@ if (tecla==37){
 	}
 
 });
+
+
+var loop = null;
+
+function mover(){
+
+	loop = setInterval( function(){
+
+ cont +=20; document.getElementById('dv3').style.left = cont;  
+		
+		
+  }, 500);
+
+};
+
+function parar(){
+	clearInterval(loop);
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
