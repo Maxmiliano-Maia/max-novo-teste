@@ -53,16 +53,14 @@ window.onload = function() {
 
 function mDown(obj)
 {
-obj.style.backgroundColor="#1ec5e5";
-obj.innerHTML="Solte o clique"
+
  animate2();
 
 }
 
 function mUp(obj)
 {
-obj.style.backgroundColor="#D94A38";
-obj.innerHTML="Obrigado"
+
 cancelAnimationFrame(id);
 
 }
