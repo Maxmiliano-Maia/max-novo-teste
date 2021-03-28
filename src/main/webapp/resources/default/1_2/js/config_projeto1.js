@@ -1,42 +1,87 @@
-﻿
+﻿var scene, camera, renderer;
+var geometry, material, cube;
+var keydown = [];
+var id;
 
-var scene, camera, renderer;
-var geometry, material, mesh;
-
-
-function Executar() {
+window.onload = function() {
 
     scene = new THREE.Scene();
-
-    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000);
-    camera.position.z = 1000;
-
-    geometry = new THREE.BoxGeometry(200, 200, 200);
-    material = new THREE.MeshBasicMaterial({ color: 0xFF2E00, wireframe: true });
-
-    mesh = new THREE.Mesh(geometry, material);
-    scene.add(mesh);
-
+    camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 0.1, 1000);
     renderer = new THREE.WebGLRenderer();
-    renderer.setClearColor(0xFFFEE8);
+    
     renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement); 
+    
+    geometry = new THREE.BoxGeometry(100,100,100);
+    material = new THREE.MeshBasicMaterial({ color: 'blue'});
+    cube = new THREE.Mesh(geometry, material);
+    scene.add(cube);
 
-    document.body.appendChild(renderer.domElement);
-
-
-
-    function animate() {
-
+   camera.position.z = 500;
+           
+        window.onkeydown = function(e)
+        {
+        keydown[e.key]=true;
+        }
+        
+        window.onkeyup = function(e)
+        {
+        keydown[e.key]=false;  
+        }
+        
+        var animate = function()
+        {	
+        
         requestAnimationFrame(animate);
+        
+        if(keydown["ArrowUp"]) camera.position.z-=10;
+         if(keydown["ArrowDown"]) camera.position.z+=10;
+          if(keydown["ArrowRight"]) camera.position.x+=10;
+           if(keydown["ArrowLeft"]) camera.position.x-=10;
+                
+         renderer.render(scene, camera);
+             
+        }
+       
+             
+        animate();
+  
+    
+       }
+    
+    
 
-        mesh.rotation.x += 0.01;
-        mesh.rotation.y += 0.02;
+function mDown(obj)
+{
+obj.style.backgroundColor="#1ec5e5";
+obj.innerHTML="Solte o clique"
+ animate2();
 
-        renderer.render(scene, camera);
-
-    }
-         animate();
 }
+
+function mUp(obj)
+{
+obj.style.backgroundColor="#D94A38";
+obj.innerHTML="Obrigado"
+cancelAnimationFrame(id);
+
+}
+
+
+        var animate2 = function()
+        {	
+        
+        id = requestAnimationFrame(animate2);
+        
+        camera.position.z-=1;
+                         
+         renderer.render(scene, camera);
+             
+        }
+
+
+
+
 
 
 //--------------------------------- Explicação --------------------------//
