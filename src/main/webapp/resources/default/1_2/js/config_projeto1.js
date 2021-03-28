@@ -45,12 +45,8 @@ window.onload = function() {
        
              
         animate();
-       
-  
-    
+ 
        }
-    
-    
 
 function mDown(obj)
 {
