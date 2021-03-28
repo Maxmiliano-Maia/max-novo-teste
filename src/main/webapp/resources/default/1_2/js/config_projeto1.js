@@ -72,7 +72,7 @@ cancelAnimationFrame(id);
         
         id = requestAnimationFrame(animate2);
         
-        camera.position.z-=100;
+        camera.position.z-=10;
                          
          renderer.render(scene, camera);
              
