@@ -45,6 +45,7 @@ window.onload = function() {
        
              
         animate();
+        animate2();
   
     
        }
@@ -71,7 +72,7 @@ cancelAnimationFrame(id);
         
         id = requestAnimationFrame(animate2);
         
-        camera.position.z-=1;
+        camera.position.z-=100;
                          
          renderer.render(scene, camera);
              
