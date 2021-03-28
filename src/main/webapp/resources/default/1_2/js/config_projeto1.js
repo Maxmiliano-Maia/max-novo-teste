@@ -45,7 +45,7 @@ window.onload = function() {
        
              
         animate();
-        animate2();
+       
   
     
        }
