@@ -1,25 +1,43 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
+
 <head>
+      <title>Projeto Geometria Analitica</title>
 
-    <!--SCRIPTS-->
-    <!--Three.js biblioteca principal-->
- <script type="text/javascript" src="resources/default/1_2/js/three.min.js"></script>
-    <!--Script com as configurações deste projeto-->
- <script type="text/javascript" src="resources/default/1_2/js/config_projeto1.js"></script>
-
-    <title>Projeto Geometria Analitica</title>
-	
-    <meta charset="utf-8" />
-
+	<meta charset="utf-8" />
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">   -->
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<script type="text/javascript" src="resources/default/1_2/js/three.min.js"></script>
 </head>
+
 <body>
+
+<script>
+        //touch events - touchstart, touchend, touchmove, touchcancel
+        //There is NO tap, doubletap, swipe, swipeleft, swiperight, rotate, pinch, or zoom
+        //You would have to create those events yourself by connecting to the touch events.
+        //work on devices that are touch capable
+        //No error on other devices because 'touchstart' is just a name like winlottery
+        //The event will probably just never happen on my laptop
+        document.querySelector('p').addEventListener('touchstart', f);
+        document.querySelector('p').addEventListener('touchend', f);
+        document.querySelector('p').addEventListener('touchmove', f);
+        
+        function f(ev){
+            console.log( ev.touches, ev.type );
+        }
+        
+    </script>
 	
-<button onmousedown="mDown(this)" onmouseup="mUp(this)"
-style="background-color:#D94A38;width:90px;height:20px;padding:40px;"></button>
-<button onmousedown="mDown(this)" onmouseup="mUp(this)"
+	
+	
+<button id= "btn" onmousedown="mDown(this)" onmouseup="mUp(this)"
 style="background-color:#D94A38;width:90px;height:20px;padding:40px;"></button>
 
 </body>
+  <script type="text/javascript" src="resources/default/1_2/js/config_projeto1.js"></script>
 </html>
+
+
+
+
