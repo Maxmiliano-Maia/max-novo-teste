@@ -7,7 +7,6 @@
 	window.onload = BuilderGamer
 	document.addEventListener("keydown", CaptureKeyDown)
 	document.addEventListener("keyup", CaptureKeyUp)
-	window.onload = startup
 	function BuilderGamer(){
 	
 		SceneBuild()
@@ -50,8 +49,8 @@
 			
 		if (key.status){
 		
-			 camera.position.z += joy.z
-			 camera.position.x += joy.x
+			 camera.position.z = joy.z
+			 camera.position.x = joy.x
 			
 			 console.log("animate: ", key,joy)
 		}
@@ -84,19 +83,17 @@
 	
 		return control 
 	}
-
-
-function startup() {
-  var el = document.getElementById("canvas");
-  el.addEventListener("touchstart", handleStart, false);
-  el.addEventListener("touchend", handleEnd, false);
-  el.addEventListener("touchcancel", handleCancel, false);
-  el.addEventListener("touchmove", handleMove, false);
+	
+	
+		document.querySelector('p').addEventListener('touchstart', f);
+		document.querySelector('p').addEventListener('touchend', f);
+		document.querySelector('p').addEventListener('touchmove', f);
+        
+function f(ev){
+    console.log( ev.touches, ev.type );
+    alert('Te amo Xanita')
+    camera.position.z = 0
 }
-
-document.addEventListener("DOMContentLoaded", startup);
-
-
 
 })()
 
