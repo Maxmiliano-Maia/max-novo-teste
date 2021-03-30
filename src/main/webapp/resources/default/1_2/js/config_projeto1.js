@@ -9,7 +9,7 @@
 	document.addEventListener("keyup", CaptureKeyUp)
 	document.querySelector('button').addEventListener('touchstart', f);
 	document.querySelector('button').addEventListener('touchend', f);
-	document.querySelector('p').addEventListener('touchmove', f);
+	
 	function BuilderGamer(){
 	
 		SceneBuild()
