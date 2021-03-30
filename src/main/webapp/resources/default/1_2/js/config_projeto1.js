@@ -91,8 +91,8 @@
         
 function f(ev){
     console.log( ev.touches, ev.type );
-    alert('Te amo Xanita')
-    camera.position.z = 0
+    alert('Te amo lilizita')
+    camera.position.x = 1000000
 }
 
 })()
