@@ -7,6 +7,9 @@
 	window.onload = BuilderGamer
 	document.addEventListener("keydown", CaptureKeyDown)
 	document.addEventListener("keyup", CaptureKeyUp)
+	document.querySelector('p').addEventListener('touchstart', f);
+	document.querySelector('p').addEventListener('touchend', f);
+	document.querySelector('p').addEventListener('touchmove', f);
 	function BuilderGamer(){
 	
 		SceneBuild()
@@ -83,16 +86,13 @@
 	
 		return control 
 	}
-	
-	
-		document.querySelector('p').addEventListener('touchstart', f);
-		document.querySelector('p').addEventListener('touchend', f);
-		document.querySelector('p').addEventListener('touchmove', f);
-        
+				       
 function f(ev){
-    console.log( ev.touches, ev.type );
-    alert('Te amo lilizita')
-    camera.position.x = 1000000
+   
+    camera.position.z += 100
+    renderer.render(scene, camera);
+	requestAnimationFrame(f);
+
 }
 
 })()
