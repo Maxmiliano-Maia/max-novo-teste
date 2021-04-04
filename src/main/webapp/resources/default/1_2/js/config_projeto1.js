@@ -1,22 +1,19 @@
-﻿(() => {
+﻿﻿(() => {
     'use stric'
     var control = { x: 0, y: 0, z: 500 }
     var scene, camera, renderer;
     var key = { event: " ", status: true };
-    var click = true
+    var click1 = false
+    var click2 = false
 
     window.onload = BuilderGamer
     document.addEventListener("keydown", CaptureKeyDown)
     document.addEventListener("keyup", CaptureKeyUp)
 
-    document.getElementById('btn1').addEventListener('touchstart', ZposON);
-    document.getElementById('btn1').addEventListener('touchend', ZposOFF);
-    document.getElementById('btn2').addEventListener('touchstart', ZnegON);
-    document.getElementById('btn2').addEventListener('touchend', ZnegOFF);
-    document.getElementById('btn3').addEventListener('touchstart', XposON);
-    document.getElementById('btn3').addEventListener('touchend', XposOFF);
-    document.getElementById('btn4').addEventListener('touchstart', XnegON);
-    document.getElementById('btn4').addEventListener('touchend', XnegOFF);
+    document.getElementById('btn1').addEventListener('touchstart', DownOn);
+    document.getElementById('btn1').addEventListener('touchend', DownOff);
+    document.getElementById('btn2').addEventListener('touchstart', LeftON);
+    document.getElementById('btn2').addEventListener('touchend', LeftOff);
 
 
     function BuilderGamer() {
@@ -51,7 +48,6 @@
         key.event = event.key
         key.status = true
 
-
     }
 
     function CaptureKeyUp(event) {
@@ -62,13 +58,15 @@
     }
 
     function animate() {
-        let joy = JoyStick()
+        JoyStick()
+        teste1()
+        teste2()
 
 
         if (key.status) {
 
-            camera.position.z = joy.z
-            camera.position.x = joy.x
+            camera.position.z = control.z
+            camera.position.x = control.x
 
         }
         renderer.render(scene, camera);
@@ -102,120 +100,45 @@
         return control
     }
 
-
-    function ZposON() {
+    function DownOn() {
         event.preventDefault();
-        click = true
-
-        booleana1()
-
+        click1 = true
 
     }
 
-    function ZposOFF() {
+    function DownOff() {
 
-        click = false
-
-
+        click1 = false
 
     }
 
-    function ZnegON() {
+    function LeftON() {
         event.preventDefault();
-        click = true
-
-        booleana2()
-
+        click2 = true
 
     }
 
-    function ZnegOFF() {
+    function LeftOff() {
 
-        click = false
-
-    }
-
-    function XposON() {
-        event.preventDefault();
-        click = true
-
-        booleana3()
+        click2 = false
 
     }
 
-    function XposOFF() {
-
-        click = false
-
-    }
-
-    function XnegON() {
-        event.preventDefault();
-        click = true
-
-        booleana4()
-
-    }
-
-    function XnegOFF() {
-
-        click = false
-
-    }
-
-    function booleana1() {
-
-        if (click == true) {
+    function teste1() {
+        if (click1) {
 
             camera.position.z += 2
-            console.log("BTN1 :", camera.position.z)
         }
-
-        renderer.render(scene, camera);
-        requestAnimationFrame(booleana1);
-
+        console.log("teste", camera.position.z)
     }
 
-    function booleana2() {
-
-        if (click == true) {
+    function teste2() {
+        if (click2) {
 
             camera.position.z -= 2
-            console.log("BTN2 :", camera.position.z)
-
         }
-
-        renderer.render(scene, camera);
-        requestAnimationFrame(booleana2);
-
+        console.log("teste2", camera.position.z)
     }
-
-    function booleana3() {
-
-        if (click == true) {
-
-            camera.position.x += 2
-
-        }
-
-        renderer.render(scene, camera);
-        requestAnimationFrame(booleana3);
-
-    }
-
-    function booleana4() {
-
-        if (click == true) {
-
-            camera.position.x -= 2
-
-        }
-
-        renderer.render(scene, camera);
-        requestAnimationFrame(booleana4);
-
-    }
-
 
 
 })()
