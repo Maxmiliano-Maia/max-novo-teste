@@ -59,8 +59,8 @@
 
     function animate() {
         JoyStick()
-        teste1()
-        teste2()
+            //teste1()
+            //teste2()
         teste3()
 
 
@@ -147,7 +147,7 @@
     function teste3() {
 
 
-        camera.position.z -= 50
+        camera.position.z -= 150
         console.log("teste2", camera.position.z)
 
 
