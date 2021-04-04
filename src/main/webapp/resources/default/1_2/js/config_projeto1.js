@@ -104,6 +104,7 @@
     function DownOn() {
         event.preventDefault();
         click1 = true
+        alert("alertando")
 
     }
 
@@ -142,13 +143,13 @@
         }
 
     }
-    
-    function teste3() {
-    
 
-            camera.position.z -= 50
-            console.log("teste2", camera.position.z)
-     
+    function teste3() {
+
+
+        camera.position.z -= 50
+        console.log("teste2", camera.position.z)
+
 
     }
 
