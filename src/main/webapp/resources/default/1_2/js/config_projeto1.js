@@ -14,6 +14,8 @@
     document.getElementById('btn1').addEventListener('touchend', DownOff);
     document.getElementById('btn2').addEventListener('touchstart', LeftON);
     document.getElementById('btn2').addEventListener('touchend', LeftOff);
+    document.getElementById('btn3').addEventListener('touchstart', RighON);
+    document.getElementById('btn3').addEventListener('touchend', RighOff);
 
 
     function BuilderGamer() {
@@ -61,8 +63,6 @@
         JoyStick()
         teste1()
         teste2()
-
-
 
         if (key.status) {
 
@@ -122,6 +122,18 @@
     function LeftOff() {
 
         click2 = false
+
+    }
+
+    function RighON() {
+        event.preventDefault();
+        alert("teste01")
+		console.log("consolando")
+    }
+
+    function RighOff() {
+
+        //click2 = false
 
     }
 
