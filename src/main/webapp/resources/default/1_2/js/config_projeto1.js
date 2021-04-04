@@ -127,7 +127,7 @@
     function teste1() {
         if (click1) {
 
-            camera.position.z += 2
+            camera.position.z += 50
         }
         console.log("teste", camera.position.z)
     }
@@ -135,7 +135,7 @@
     function teste2() {
         if (click2) {
 
-            camera.position.z -= 2
+            camera.position.z -= 50
         }
         console.log("teste2", camera.position.z)
     }
