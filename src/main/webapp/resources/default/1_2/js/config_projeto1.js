@@ -64,7 +64,7 @@
         teste1()
         teste2()
 
-        if (key.status) {
+        if (key.status || click1) {
 
             camera.position.z = control.z
             camera.position.x = control.x
@@ -128,7 +128,7 @@
     function RighON() {
         event.preventDefault();
         alert("teste01")
-		console.log("consolando")
+        console.log("consolando")
     }
 
     function RighOff() {
@@ -140,19 +140,19 @@
     function teste1() {
         if (click1) {
 
-            camera.position.z += 50
-            console.log("teste2", camera.position.z)
+            control.z += 50
+            console.log("teste1", camera.position.z)
         }
-
+        return control
     }
 
     function teste2() {
         if (click2) {
 
-            camera.position.z -= 50
+            control.z -= 50
             console.log("teste2", camera.position.z)
         }
-
+        return control
     }
 
 
