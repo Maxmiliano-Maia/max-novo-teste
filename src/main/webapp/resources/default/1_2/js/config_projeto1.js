@@ -61,6 +61,7 @@
         JoyStick()
         teste1()
         teste2()
+        teste3()
 
 
         if (key.status) {
@@ -128,16 +129,27 @@
         if (click1) {
 
             camera.position.z += 50
+            console.log("teste2", camera.position.z)
         }
-        console.log("teste", camera.position.z)
+
     }
 
     function teste2() {
         if (click2) {
 
             camera.position.z -= 50
+            console.log("teste2", camera.position.z)
         }
-        console.log("teste2", camera.position.z)
+
+    }
+    
+    function teste3() {
+    
+
+            camera.position.z -= 50
+            console.log("teste2", camera.position.z)
+     
+
     }
 
 
