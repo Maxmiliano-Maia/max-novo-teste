@@ -21,7 +21,6 @@
     document.getElementById('btn4').addEventListener('touchstart', UpON);
     document.getElementById('btn4').addEventListener('touchend', UpOff);
 
-
     function BuilderGamer() {
 
         SceneBuild()
@@ -103,7 +102,7 @@
         teste2()
         teste3()
         teste4()
-
+        document.getElementById('game1').value = camera.position.z
         if (key.status || click1 || click2 || click3 || click4) {
 
             camera.position.z = control.z
