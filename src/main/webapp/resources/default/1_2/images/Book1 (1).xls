@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+<DocumentProperties xmlns="urn:schemas-microsoft-com:office:office"></DocumentProperties>
+<Styles>
+<Style ss:ID="txtCol">
+<NumberFormat ss:Format="@"/>
+</Style>
+<Style ss:ID="shortDate">
+<NumberFormat ss:Format="dd/mm/yy;@"/>
+</Style>
+<Style ss:ID="boldTxt">
+<Font ss:Bold="1"/>
+<NumberFormat ss:Format="@"/>
+</Style>
+</Styles>
+<Worksheet ss:Name="Sheet1">
+<Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="70" x:FullColumns="1" x:FullRows="1"><Column ss:Index="2" ss:StyleID="txtCol"/>
+<Column ss:Index="3" ss:StyleID="txtCol"/>
+<Row>
+<Cell ss:StyleID="boldTxt"><Data ss:Type="String">Fornecedor Alternativo</Data></Cell>
+<Cell ss:StyleID="boldTxt"><Data ss:Type="String">Descrição</Data></Cell>
+<Cell ss:StyleID="boldTxt"><Data ss:Type="String">CNPJ</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">291324</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">PONTANEGRA AUTOMOVEIS LTDA</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">40757908000169</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">291477</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">COM MOTOTEC</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">08547366000197</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">291515</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">POTIGUAR VEICULOS LTDA</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">08049231000100</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">292111</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">HC PNEUS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">00000802000878</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">292432</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">TROKAUTO PEC E SERVICOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">01443418000136</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">292485</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">MOTO SERV</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">24186496000106</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">292542</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">POVEL PORCINO VEICULOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">08378861000110</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">292838</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">ELETRO PEC LTDA</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">08286262000176</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">491309</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">CIRNE MOTOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">05456283000102</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">556630</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">COM MOTOTEC LTDA</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">08547366000278</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">1737493</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">MOTOESTE MOTORES PECAS E ACES</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">08350746000137</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">1974383</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">A CHAVE</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">11978269000163</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">2080785</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">HONDA</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">01984870000105</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">2211984</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">MEGADIESEL</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">03538129000146</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">2717488</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">CARBOX</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">09080300000100</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">2734110</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">CENTRO AUTOMOTIVO MD</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">07488649000142</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">2735285</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">CLINICA DO VEICULO</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">03628076000154</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">3943225</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">BR MOTO PECA E SERVICO LTDA</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">02491457000171</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">4176586</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">POTIGUAR VEICULOS LTDA</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">08049231000363</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">6048423</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">DAO MOTOPECAS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">09216884000190</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">7925078</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">CASA DAS MOTOCICLETAS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">10293191000180</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">12002974</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">DICAL</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">35503721000360</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">12012661</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">SOBRE RODAS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">12257577000162</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">12490082</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">DESTAK MOTO</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">08495967000101</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">13563734</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">CASA DAS MOTOCICLETAS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">10293191000342</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">14285019</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">MOTO TUR COM</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">10464420000182</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">14913223</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">JANSSEN MOTOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">41003377000181</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">15778366</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">H P PNEUS E AUTOPECAS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">02005020000180</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">15857282</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">OLINDA PNEUS COM E SERVICOS LT</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">24185522000173</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">18643520</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">CASA DAS MOTOCICLETAS LTDA</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">10293191000261</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">23456531</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">PNEU MOTO CENTER</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">17243347000168</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">25200610</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">MOTOESTE MOTORES PECAS E ACESS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">08350746000218</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">25530358</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">CIRNE MOTOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">05456283000366</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">25621264</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">BR MOTO</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">02491457000252</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">25679746</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">CIRNE MOTOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">05456283000285</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">31325285</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">MOTO CICLO</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">22632450000130</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">34493654</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">A CLINICA DO CARRO</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">01454835000184</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">34853188</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">CIRNE MOTOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">05456283000447</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">34865423</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">PEDAO AUTO PECAS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">08204760000122</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">34873251</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">HC PNEUS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">00000802004601</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">34894817</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">ALEX REBOQUE</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">11972321000174</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">34908048</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">HC PNEUS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">00000802004784</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">34908058</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">MOTOCENTER PECAS E SERVICOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">17496186000114</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">34916996</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">CIRNE MOTOS SANTO ANTONIO</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">05456283000609</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">35052756</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">MARIO MOTOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">12694329000189</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">36040994</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">CICLOS MOTO</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">16529652000158</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">37014730</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">I S COM E SERVICOS LTDA</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">19812586000117</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">37313002</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">LULA AUTO PEC E SERVICOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">20792167000140</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">42693153</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">START MOTO SERVICE</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">19952409000136</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">47253125</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">MRS GUINCHO RESGATE 24 HORAS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">31563412000163</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">48778705</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">AUTOMOBILE SOLUCOES AUTOMOTIVA</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">20660039000142</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">49181762</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">DESTAK MOTOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">27314919000106</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">49618542</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">AUTO SERVICO CLINICA DO CARRO</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">26592767000140</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">50832109</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">VELOZ MOTOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">02554223000126</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">51063424</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">ALCIMAR MOTOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">09178322000108</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">52547116</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">BARROS AUTO PECAS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">32561163000130</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">54058733</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">RIONORTE SERVICO DE RETIFICA L</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">24239594000156</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">54058759</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">JODIESEL RIONORTE IND COM E SE</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">35274091000138</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">56190287</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">MOTOCICLO BRASIL</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">36362590000140</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">59885074</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">R E T SERVICOS AUTOMOTIVOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">33723709000174</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">61633494</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">AUTO MECANICA RENOVACAO</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">26685550000185</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">62657099</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">OLINDA PNEUS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">24185522001145</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">62657108</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">UTI DO CARRO EXPRESS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">06143726000160</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">62849831</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">CHECK UP FLEX PEC E SERVICOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">03588335000160</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">62849836</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">CARBOX LTDA</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">10334942000160</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">63430333</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">FMV AUTO ELETIRCA E SERVICOS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">30116955000170</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">63820472</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">PLANETCROSS</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">31702754000117</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="1"><Data ss:Type="Number">63932297</Data></Cell>
+<Cell ss:Index="2"><Data ss:Type="String">NO GRAU ESTETICA AUTOMOTIVA</Data></Cell>
+<Cell ss:Index="3"><Data ss:Type="String">28665221000106</Data></Cell>
+</Row>
+<Row>
+</Row>
+</Table>
+</Worksheet>
+</Workbook>

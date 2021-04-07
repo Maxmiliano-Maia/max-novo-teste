@@ -26,6 +26,9 @@
 
         SceneBuild()
         CubeMaker()
+        addAxisInScene()
+        addCubeWithTextureInScene()
+        EsphereMaker()
 
     }
 
@@ -37,16 +40,41 @@
         document.body.appendChild(renderer.domElement);
         camera.position.z = control.z
         animate()
+
     }
 
-    function CubeMaker(x = 100, y = 100, z = 100, color = 'blue') {
+    function CubeMaker(x = 10, y = 10, z = 10, color = 'gold') {
 
         let geometry = new THREE.BoxGeometry(x, y, z);
         let material = new THREE.MeshBasicMaterial({ color: color });
-        let cube = new THREE.Mesh(geometry, material);
+        cube = new THREE.Mesh(geometry, material);
 
         scene.add(cube);
+        cube.position.y = 100
+    }
 
+    function EsphereMaker(x = 0, y = 10, z = 10, color = 'red') {
+        let texture = new THREE.TextureLoader().load('resources/default/1_2/images/Terra.png')
+        let geometry = new THREE.SphereGeometry(x, y, z)
+        let material = new THREE.MeshBasicMaterial({ map: texture });
+        let esfera = new THREE.Mesh(geometry, material);
+
+        scene.add(esfera);
+        esfera.position.y = 10
+    }
+
+
+    function addCubeWithTextureInScene() {
+
+        let texture = new THREE.TextureLoader().load('resources/default/1_2/images/Lua.jpg')
+        let geometry = new THREE.SphereGeometry(20, 20, 20);
+        let material = new THREE.MeshBasicMaterial({ map: texture })
+
+        let cube2 = new THREE.Mesh(geometry, material);
+        cube2.position.z = 200
+        cube2.position.y = 100
+        scene.add(cube2)
+        console.log("posicao do cubo", cube2.position.z)
     }
 
     function CaptureKeyDown(event) {
@@ -62,6 +90,12 @@
         key.status = false
 
     }
+    var axis;
+
+    function addAxisInScene() {
+        axis = new THREE.AxisHelper(200);
+        scene.add(axis);
+    }
 
     function animate() {
         JoyStick()
@@ -74,8 +108,10 @@
 
             camera.position.z = control.z
             camera.position.x = control.x
+            camera.position.y = control.y
 
         }
+
         renderer.render(scene, camera);
         requestAnimationFrame(animate);
 
@@ -87,24 +123,33 @@
 
             switch (key.event) {
                 case 'ArrowUp':
-                    control.z -= 10
+                    control.z -= 2
+
                     break
                 case 'ArrowDown':
-                    control.z += 10
+                    control.z += 2
                     break
                 case 'ArrowRight':
-                    control.x += 10
+                    control.x += 2
                     break
                 case 'ArrowLeft':
-                    control.x -= 10
+                    control.x -= 2
+                    break
+                case 'Shift':
+                    control.y += 2
+                    break
+                case 'Control':
+                    control.y -= 2
                     break
                 default:
 
             }
 
+
         }
 
         return control
+
     }
 
     function DownOn() {
@@ -157,7 +202,6 @@
         if (click1) {
 
             control.z += 10
-            console.log("teste1", camera.position.z)
         }
         return control
     }
@@ -166,7 +210,7 @@
         if (click2) {
 
             control.z -= 10
-            console.log("teste2", camera.position.z)
+
         }
         return control
     }
@@ -175,7 +219,7 @@
         if (click3) {
 
             control.x -= 10
-            console.log("teste3", camera.position.x)
+
         }
         return control
     }
@@ -184,9 +228,11 @@
         if (click4) {
 
             control.x += 10
-            console.log("teste4", camera.position.x)
+
         }
         return control
     }
+
+
 
 })()
