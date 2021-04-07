@@ -1,4 +1,4 @@
-﻿﻿(() => {
+﻿(() => {
     'use stric'
     var control = { x: 0, y: 0, z: 500 }
     var scene, camera, renderer;
@@ -35,7 +35,7 @@
         scene = new THREE.Scene();
         camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
         renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setSize(1000, 1000);
         document.body.appendChild(renderer.domElement);
         camera.position.z = control.z
         animate()
