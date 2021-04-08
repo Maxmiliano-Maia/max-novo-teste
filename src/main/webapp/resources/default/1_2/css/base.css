@@ -61,6 +61,17 @@ body {
 		
 }
 
+#game2{
+	position: absolute;
+	top: 200px;
+	left: 1000px;
+	width: 30px;
+	height: 30px;
+	background-color: #696969;
+	color: white;
+		
+}
+
 html {
  overflow: hidden;
 }

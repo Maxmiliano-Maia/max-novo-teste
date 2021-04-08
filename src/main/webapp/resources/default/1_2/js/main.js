@@ -1,12 +1,14 @@
 ﻿(() => {
     'use stric'
-    var control = { x: 0, y: 0, z: 500 }
-    var scene, camera, renderer;
+    var control = { x: 0, y: 0, z: 700 }
+    var scene, camera, esfera, renderer, texture, geometry, material, posicao, resultado;
+    var aux = 0
     var key = { event: " ", status: true };
     var click1 = false
     var click2 = false
     var click3 = false
     var click4 = false
+	var click5 = false
 
     window.onload = BuilderGamer
     document.addEventListener("keydown", CaptureKeyDown)
@@ -20,14 +22,16 @@
     document.getElementById('btn3').addEventListener('touchend', RighOff);
     document.getElementById('btn4').addEventListener('touchstart', UpON);
     document.getElementById('btn4').addEventListener('touchend', UpOff);
+    
+    document.getElementById('btn5').addEventListener('click', teste5);
 
     function BuilderGamer() {
 
         SceneBuild()
         CubeMaker()
         addAxisInScene()
-        addCubeWithTextureInScene()
-        EsphereMaker()
+        MoonMaker()
+        Terra()
 
     }
 
@@ -38,6 +42,7 @@
         renderer.setSize(1000, 1000);
         document.body.appendChild(renderer.domElement);
         camera.position.z = control.z
+
         animate()
 
     }
@@ -47,23 +52,24 @@
         let geometry = new THREE.BoxGeometry(x, y, z);
         let material = new THREE.MeshBasicMaterial({ color: color });
         cube = new THREE.Mesh(geometry, material);
-
         scene.add(cube);
-        cube.position.y = 100
+
+
     }
 
-    function EsphereMaker(x = 0, y = 10, z = 10, color = 'red') {
-        let texture = new THREE.TextureLoader().load('resources/default/1_2/images/Terra.png')
-        let geometry = new THREE.SphereGeometry(x, y, z)
-        let material = new THREE.MeshBasicMaterial({ map: texture });
-        let esfera = new THREE.Mesh(geometry, material);
-
+    function Terra(x = 0, y = 10, z = 10, color = 'red') {
+        texture = new THREE.TextureLoader().load('resources/default/1_2/images/Terra.png')
+        geometry = new THREE.SphereGeometry(x, y, z)
+        material = new THREE.MeshBasicMaterial({ map: texture });
+        esfera = new THREE.Mesh(geometry, material);
+        posicao = esfera.position.z
         scene.add(esfera);
-        esfera.position.y = 10
+        
+
     }
 
 
-    function addCubeWithTextureInScene() {
+    function MoonMaker() {
 
         let texture = new THREE.TextureLoader().load('resources/default/1_2/images/Lua.jpg')
         let geometry = new THREE.SphereGeometry(20, 20, 20);
@@ -73,7 +79,7 @@
         cube2.position.z = 200
         cube2.position.y = 100
         scene.add(cube2)
-        console.log("posicao do cubo", cube2.position.z)
+
     }
 
     function CaptureKeyDown(event) {
@@ -95,14 +101,20 @@
         axis = new THREE.AxisHelper(200);
         scene.add(axis);
     }
-
+    
+   
+	
     function animate() {
         JoyStick()
         teste1()
         teste2()
         teste3()
         teste4()
-        document.getElementById('game1').value = camera.position.z
+       
+   					document.getElementById('game1').value = camera.position.z
+   					document.getElementById('game2').value = resultado
+   				
+        
         if (key.status || click1 || click2 || click3 || click4) {
 
             camera.position.z = control.z
@@ -140,21 +152,21 @@
                 case 'Control':
                     control.y -= 2
                     break
-                default:
+                    default:
 
             }
 
 
         }
 
-        return control
+        return control.z
 
     }
 
     function DownOn() {
         event.preventDefault();
         click1 = true
-
+		
     }
 
     function DownOff() {
@@ -196,11 +208,18 @@
         click4 = false
 
     }
+    
+    function teste5() {
+		alert("desgracado")
+        click5 = true
+		
+    }
 
     function teste1() {
         if (click1) {
 
             control.z += 10
+
         }
         return control
     }
@@ -231,7 +250,12 @@
         }
         return control
     }
-
+	function teste5() {
+        
+			
+         	resultado = prompt("digite um valor")
+			esfera.position.z = resultado
+    }
 
 
 })()
