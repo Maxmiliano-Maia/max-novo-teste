@@ -1,8 +1,8 @@
 ﻿(() => {
     'use stric'
-    var control = { x: 0, y: 0, z: 700 }
-    var scene, camera, esfera, renderer, texture, geometry, material, posicao, resultado;
-    var aux = 0
+    var control = { x: 0, y: 100, z: 726}
+    var scene, camera, renderer, texture, geometry, material, posicao, resultado, cube, distanciaCube;
+    var distanciaMoonX, distanciaMoonY, distanciaMoonZ, distanciaTerraX, distanciaTerraY, distanciaTerraZ
     var key = { event: " ", status: true };
     var click1 = false
     var click2 = false
@@ -47,23 +47,27 @@
 
     }
 
-    function CubeMaker(x = 10, y = 10, z = 10, color = 'gold') {
+    function CubeMaker(x = 10, y = 6, z = 6, color = 'red') {
 
         let geometry = new THREE.BoxGeometry(x, y, z);
         let material = new THREE.MeshBasicMaterial({ color: color });
         cube = new THREE.Mesh(geometry, material);
         scene.add(cube);
-
-
+		cube.position.y = 105
+		distanciaCube = cube.position.y
+		document.getElementById('cuboY').value = cube.position.y
     }
 
-    function Terra(x = 0, y = 10, z = 10, color = 'red') {
+    function Terra(x = 103, y = 103, z = 103, color = 'red') {
         texture = new THREE.TextureLoader().load('resources/default/1_2/images/Terra.png')
         geometry = new THREE.SphereGeometry(x, y, z)
         material = new THREE.MeshBasicMaterial({ map: texture });
-        esfera = new THREE.Mesh(geometry, material);
-        posicao = esfera.position.z
-        scene.add(esfera);
+        terra = new THREE.Mesh(geometry, material);
+        posicao = terra.position.z
+        distanciaTerraX = terra.position.x
+        distanciaTerraY = terra.position.y
+        distanciaTerraZ = terra.position.z
+        scene.add(terra);
         
 
     }
@@ -72,13 +76,17 @@
     function MoonMaker() {
 
         let texture = new THREE.TextureLoader().load('resources/default/1_2/images/Lua.jpg')
-        let geometry = new THREE.SphereGeometry(20, 20, 20);
+        let geometry = new THREE.SphereGeometry(13, 13, 13);
         let material = new THREE.MeshBasicMaterial({ map: texture })
 
-        let cube2 = new THREE.Mesh(geometry, material);
-        cube2.position.z = 200
-        cube2.position.y = 100
-        scene.add(cube2)
+        let moon = new THREE.Mesh(geometry, material);
+        moon.position.x = 0
+        moon.position.y = 384,4
+        moon.position.z = 0
+        distanciaMoonX = moon.position.x
+        distanciaMoonY = moon.position.y
+        distanciaMoonZ = moon.position.z
+        scene.add(moon)
 
     }
 
@@ -110,10 +118,13 @@
         teste2()
         teste3()
         teste4()
-       
-   					document.getElementById('game1').value = camera.position.z
-   					document.getElementById('game2').value = resultado
-   				
+       				document.getElementById('luaX').value = distanciaMoonX
+   					document.getElementById('luaY').value = distanciaMoonY
+   					document.getElementById('luaZ').value = distanciaMoonZ		
+        
+        			document.getElementById('terraX').value = distanciaTerraX
+   					document.getElementById('terraY').value = distanciaTerraY
+   					document.getElementById('terraZ').value = distanciaTerraZ	
         
         if (key.status || click1 || click2 || click3 || click4) {
 
@@ -151,6 +162,9 @@
                     break
                 case 'Control':
                     control.y -= 2
+                    break
+                case 'Delete':
+                    alert("vai da certo")
                     break
                     default:
 
@@ -209,11 +223,6 @@
 
     }
     
-    function teste5() {
-		alert("desgracado")
-        click5 = true
-		
-    }
 
     function teste1() {
         if (click1) {
@@ -251,10 +260,10 @@
         return control
     }
 	function teste5() {
-        
-			
-         	resultado = prompt("digite um valor")
-			esfera.position.z = resultado
+        		
+         	cube.position.y = prompt("digite um valor")
+            document.getElementById('cuboY').value = cube.position.y
+         
     }
 
 

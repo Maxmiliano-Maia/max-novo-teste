@@ -50,10 +50,20 @@ body {
 	color: white;
 }
 
-#game1{
+#btn5{
 	position: absolute;
-	top: 100px;
-	left: 1000px;
+	top: 500px;
+	left: 1210px;
+	width: 300px;
+	height: 300px;
+	background-color: #696969;
+	color: white;
+}
+
+#terraX{
+	position: absolute;
+	top: 120px;
+	left: 760px;
 	width: 30px;
 	height: 30px;
 	background-color: #696969;
@@ -61,16 +71,121 @@ body {
 		
 }
 
-#game2{
+#terraY{
 	position: absolute;
-	top: 200px;
-	left: 1000px;
+	top: 120px;
+	left: 840px;
 	width: 30px;
 	height: 30px;
 	background-color: #696969;
 	color: white;
 		
 }
+
+#terraZ{
+	position: absolute;
+	top: 120px;
+	left: 920px;
+	width: 30px;
+	height: 30px;
+	background-color: #696969;
+	color: white;
+		
+}
+
+#luaX{
+	position: absolute;
+	top: 20px;
+	left:  760px;
+	width: 30px;
+	height: 30px;
+	background-color: #696969;
+	color: white;
+		
+}
+
+
+#luaY{
+	position: absolute;
+	top: 20px;
+	left:  840px;
+	width: 30px;
+	height: 30px;
+	background-color: #696969;
+	color: white;
+		
+}
+
+
+#luaZ{
+	position: absolute;
+	top: 20px;
+	left:  920px;
+	width: 30px;
+	height: 30px;
+	background-color: #696969;
+	color: white;
+		
+}
+
+#cuboX{
+	position: absolute;
+	top: 220px;
+	left: 760px;
+	width: 30px;
+	height: 30px;
+	background-color: #696969;
+	color: white;
+		
+}
+
+#cuboY{
+	position: absolute;
+	top: 220px;
+	left: 840px;
+	width: 30px;
+	height: 30px;
+	background-color: #696969;
+	color: white;
+		
+}
+
+#cuboZ{
+	position: absolute;
+	top: 220px;
+	left: 900px;
+	width: 30px;
+	height: 30px;
+	background-color: #696969;
+	color: white;
+		
+}
+
+nobr{
+		position: absolute;
+		left: 600px;
+		top: 0px;
+		color: white
+		
+}
+
+#nobr2{
+		position: absolute;
+		left: 600px;
+		top: 100px;
+		color: white
+		
+}
+
+
+#nobr3{
+		position: absolute;
+		left: 600px;
+		top: 200px;
+		color: white
+		
+}
+
 
 html {
  overflow: hidden;
