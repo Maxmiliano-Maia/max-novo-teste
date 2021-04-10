@@ -1,8 +1,8 @@
 ﻿(() => {
     'use stric'
     var control = { x: 0, y: 100, z: 726}
-    var scene, camera, renderer, texture, geometry, material, posicao, resultado, cube, distanciaCube;
-    var distanciaMoonX, distanciaMoonY, distanciaMoonZ, distanciaTerraX, distanciaTerraY, distanciaTerraZ
+    var scene, camera, renderer, texture, geometry, material, posicao, resultado, cube;
+    var distanciaMoonX, distanciaMoonY, distanciaMoonZ, distanciaTerraX, distanciaTerraY, distanciaTerraZ, distanciaCubeX, distanciaCubeY, distanciaCubeZ
     var key = { event: " ", status: true };
     var click1 = false
     var click2 = false
@@ -22,8 +22,8 @@
     document.getElementById('btn3').addEventListener('touchend', RighOff);
     document.getElementById('btn4').addEventListener('touchstart', UpON);
     document.getElementById('btn4').addEventListener('touchend', UpOff);
-    
-    document.getElementById('btn5').addEventListener('click', teste5);
+     
+    document.getElementById('cuboY').addEventListener('click', teste5);
 
     function BuilderGamer() {
 
@@ -54,8 +54,12 @@
         cube = new THREE.Mesh(geometry, material);
         scene.add(cube);
 		cube.position.y = 105
-		distanciaCube = cube.position.y
+		distanciaCubeX = cube.position.x
+		distanciaCubeY = cube.position.y
+		distanciaCubeZ = cube.position.Z
+		document.getElementById('cuboX').value = cube.position.x
 		document.getElementById('cuboY').value = cube.position.y
+    	document.getElementById('cuboZ').value = cube.position.z
     }
 
     function Terra(x = 103, y = 103, z = 103, color = 'red') {
@@ -125,7 +129,7 @@
         			document.getElementById('terraX').value = distanciaTerraX
    					document.getElementById('terraY').value = distanciaTerraY
    					document.getElementById('terraZ').value = distanciaTerraZ	
-        
+               
         if (key.status || click1 || click2 || click3 || click4) {
 
             camera.position.z = control.z

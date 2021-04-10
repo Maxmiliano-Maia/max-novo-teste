@@ -1,49 +1,52 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html>
 
 <head>
 
-    <title>Projeto Geometria Analitica</title>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <script type="text/javascript" src="resources/default/1_2/js/three.min.js"></script>
+
+    <title>Projeto Geometria Analitica</title>
+
     <link rel="stylesheet" type="text/css" href="resources/default/1_2/css/base.css" />
+    <script type="text/javascript" src="resources/default/1_2/js/three.min.js"></script>
 
 </head>
 
 <body>
-<nobr>Coordenadas da Lua:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z
-</nobr>
-<nobr id="nobr2">Coordenadas da Terra:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z
-</nobr>
-<nobr id="nobr3">Coordenadas do Satelite:&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</nobr>
-<div><input type="text"  id="terraX" /> </div>   
-<div><input type="text"  id="terraY" /> </div>
-<div><input type="text"  id="terraZ" /> </div>
+    <nobr>Coordenadas da Lua:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x<sub><i>L</i></sub>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y
+        <sub><i>L</i></sub>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z
+        <sub><i>L</i></sub>
+    </nobr>
+    <nobr id="nobr2">Coordenadas da Terra:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x<sub><i>T</i></sub>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y
+        <sub><i>T</i></sub>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z
+        <sub><i>T</i></sub>
+    </nobr>
+    <nobr id="nobr3">Coordenadas do Satelite:&nbsp;&nbsp;&nbsp;&nbsp;x<sub><i>S</i></sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y
+        <sub><i>S</i></sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z
+        <sub><i>S</i></sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </nobr>
+    <nobr id="nobr4">Distância entre o Satelite e orbita da Lua:&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </nobr>
+    <div><input type="text" id="terraX" /> </div>
+    <div><input type="text" id="terraY" /> </div>
+    <div><input type="text" id="terraZ" /> </div>
 
-<div><input type="text"  id="luaX" /> </div>
-<div><input type="text"  id="luaY" /> </div>
-<div><input type="text"  id="luaZ" /> </div> 
+    <div><input type="text" id="luaX" /> </div>
+    <div><input type="text" id="luaY" /> </div>
+    <div><input type="text" id="luaZ" /> </div>
 
-<div><input type="text"  id="cuboX" /> </div>   
-<div><input type="text"  id="cuboY" /> </div>
-<div><input type="text"  id="cuboZ" /> </div>   
+    <div><input type="text" id="cuboX" /> </div>
+    <div><input type="text" id="cuboY" /> </div>
+    <div><input type="text" id="cuboZ" /> </div>
 
     <button id="btn2" style="width:90px;height:20px;padding:40px;"></button>
     <button id="btn1" style="width:90px;height:20px;padding:40px;"></button>
     <button id="btn4" style="width:90px;height:20px;padding:40px;"></button>
     <button id="btn3" style="width:90px;height:20px;padding:40px;"></button>
-    <button id="btn5" style="width:90px;height:20px;padding:40px;"></button>
+
 
 </body>
 

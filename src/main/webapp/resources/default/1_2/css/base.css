@@ -166,6 +166,7 @@ nobr{
 		left: 600px;
 		top: 0px;
 		color: white
+	
 		
 }
 
@@ -182,6 +183,14 @@ nobr{
 		position: absolute;
 		left: 600px;
 		top: 200px;
+		color: white
+		
+}
+
+#nobr4{
+		position: absolute;
+		left: 600px;
+		top: 350px;
 		color: white
 		
 }
